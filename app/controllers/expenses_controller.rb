@@ -2,8 +2,7 @@
 
 class ExpensesController < ApplicationController
   def index
-    records = Expense.all
-    render json: { records: records }
+    render json: { record: Expense.all }
   end
 
   def permitted_params

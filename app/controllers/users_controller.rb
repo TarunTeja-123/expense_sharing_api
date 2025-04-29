@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     if record.save!
       render json: { status: 'successes', record: record }
     else
-      render json: { status: record.errors.message }
+      render json: { status: record.errors.message  }
     end
   end
 
